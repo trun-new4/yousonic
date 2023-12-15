@@ -1,0 +1,4 @@
+<app-title></app-title>
+<app-logo></app-logo>
+<app-search-bar [config]="searchBarConfig"></app-search-bar>
+<app-spotify-canvas *ngIf="currentUIArtist && artistSystem" [config]="currentUIArtist" [artistSystem]="artistSystem"></app-spotify-canvas>
