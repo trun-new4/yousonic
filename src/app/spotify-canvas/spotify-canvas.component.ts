@@ -2,7 +2,17 @@ import { Component, OnInit, ViewChild, ElementRef, Input, AfterViewInit, OnChang
 import * as THREE from 'three';
 import { Scene, Mesh, PerspectiveCamera, PointLight,MeshStandardMaterial, MeshBasicMaterial, BoxGeometry, SphereGeometry } from 'three';
 
-import { OrbitControls } from 'three-orbitcontrols-ts';
+//import { OrbitControls } from 'three-orbitcontrols-ts';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+//import { OrbitControls } from 'three-orbitcontrols-ts';
+
+
+//import { OrbitControls } from 'three-orbitcontrols-ts';
+
+
+
 import { musicPlanetFactory } from './music-planet.factory';
 
 
@@ -38,6 +48,7 @@ export class SpotifyCanvasComponent implements AfterViewInit, OnChanges {
   @Input() artistSystem: ArtistSystem;
 
   @ViewChild('canvas', { static: true }) public canvas: ElementRef;
+
 
   scene: Scene;
   geometry: SphereGeometry | BoxGeometry;
