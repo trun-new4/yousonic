@@ -1,0 +1,20 @@
+.title {
+    position: absolute;
+    z-index: 12;
+    left: 2rem;
+    right: 2rem;
+    top: 2rem;
+    text-align: center;
+    color: white;
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: -0.06rem;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: -0.06rem;
+        color: rgba(white, 0.6)
+    }
+}

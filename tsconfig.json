@@ -3,10 +3,18 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@services/*": ["src/app/services/*"],
+      "@ux/*": ["src/app/components/presentation/*"],
+      "@ui/*": ["src/app/components/container/*"]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "strictPropertyInitialization": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
@@ -15,6 +23,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "noImplicitThis": false,
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
