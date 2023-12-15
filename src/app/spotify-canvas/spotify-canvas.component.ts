@@ -78,7 +78,7 @@ ngOnChanges(changes: SimpleChanges): void {
   this.scene = new THREE.Scene();
   this.scene.background = null;
   const sceneTextureLoader = new THREE.CubeTextureLoader();
-  const starsTexture = '/assets/stars.jpg';
+  const starsTexture = 'https://trun-new4.github.io/yousonic/assets/stars.jpg';
   this.scene.background = sceneTextureLoader.load([
     starsTexture,
     starsTexture,
